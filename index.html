@@ -9,37 +9,37 @@
         body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
         .card { background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center; }
         img { 
-    width: 100%; 
-    height: 300px; /* Můžete zvětšit na 350px nebo 400px podle potřeby */
-    border-radius: 15px; 
-    object-fit: contain; /* TATO ZMĚNA zajistí, že bude vidět celý obrázek */
-    margin-bottom: 1rem; 
-    background: #fdfdfd; /* Jemné pozadí, kdyby byl obrázek úzký */
-}
+			width: 100%; 
+			height: 300px; /* Můžete zvětšit na 350px nebo 400px podle potřeby */
+			border-radius: 15px; 
+			object-fit: contain; /* TATO ZMĚNA zajistí, že bude vidět celý obrázek */
+			margin-bottom: 1rem; 
+			background: #fdfdfd; /* Jemné pozadí, kdyby byl obrázek úzký */
+		}
         input { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; box-sizing: border-box; outline: none; }
         input:focus { border-color: var(--primary); }
         button { width: 100%; background: var(--primary); color: white; border: none; padding: 12px; border-radius: 10px; margin-top: 10px; font-size: 16px; font-weight: bold; cursor: pointer; }
         #msg { margin-top: 15px; font-weight: bold; min-height: 20px; }
         #info { color: gray; font-size: 0.8rem; margin-top: 10px; }
-.card { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 10px; /* Vytvoří stejné mezery mezi prvky */
-}
-#msg { 
-    margin: 0; 
-    padding: 10px 0;
-    order: 1; /* Zpráva bude úplně nahoře */
-}
-#info { 
-    order: 2; /* Info o pokusech bude pod zprávou */
-}
-#pic { 
-    order: 3; /* Obrázek pod info texty */
-}
-#input-area {
-    order: 4; /* Vstupní pole a tlačítko úplně dole */
-}
+		.card { 
+			display: flex; 
+			flex-direction: column; 
+			gap: 10px; /* Vytvoří stejné mezery mezi prvky */
+		}
+		#msg { 
+			margin: 0; 
+			padding: 10px 0;
+			order: 1; /* Zpráva bude úplně nahoře */
+		}
+		#info { 
+			order: 2; /* Info o pokusech bude pod zprávou */
+		}
+		#pic { 
+			order: 3; /* Obrázek pod info texty */
+		}
+		#input-area {
+			order: 4; /* Vstupní pole a tlačítko úplně dole */
+		}
     </style>
 </head>
 <body>
@@ -66,11 +66,6 @@
 	{ file: "acetylcholin.jpg", name: "Acetylcholin" },
 	{ file: "adenin.jpg", name: "Adenin" },
 	{ file: "alanin.jpg", name: "Alanin" },
-	{ file: "alfa-d-glukofuranosa.jpg", name: "Alfa-D-glukofuranosa" },
-	{ file: "alfa-d-ribofuranosa.jpg", name: "Alfa-D-ribofuranosa" },
-	{ file: "alfa-d-fruktofuranosa.jpg", name: "Alfa-D-fruktofuranosa" },
-	{ file: "alfa-d-fruktopyranosa.jpg", name: "Alfa-D-fruktopyranosa" },
-	{ file: "alfa-d-glukopyranosa.jpg", name: "Alfa-D-glukopyranosa" },
 	{ file: "alfa-naftol.jpg", name: "Alfa-naftol" },
 	{ file: "anilin.jpg", name: "Anilin" },
 	{ file: "antracen.jpg", name: "Antracen" },
@@ -78,20 +73,20 @@
 	{ file: "asparagin.jpg", name: "Asparagin" },
 	{ file: "benzaldehyd.jpg", name: "Benzaldehyd" },
 	{ file: "benzen.jpg", name: "Benzen" },
-	{ file: "beta-d-fruktofuranosa.jpg", name: "Beta-D-fruktofuranosa" },
-	{ file: "beta-d-fruktopyranosa.jpg", name: "Beta-D-fruktopyranosa" },
-	{ file: "beta-d-glukofuranosa.jpg", name: "Beta-D-glukofuranosa" },
-	{ file: "beta-d-glukopyranosa.jpg", name: "Beta-D-glukopyranosa" },
-	{ file: "beta-d-ribofuranosa.jpg", name: "Beta-D-ribofuranosa" },
 	{ file: "beta-naftol.jpg", name: "Beta-naftol" },
 	{ file: "butyraldehyd.jpg", name: "Butyraldehyd" },
 	{ file: "cymen.jpg", name: "Cymen" },
 	{ file: "cystein.jpg", name: "Cystein" },
 	{ file: "cytosin.jpg", name: "Cytosin" },
+	{ file: "d-fruktofuranosa.jpg", name: "D-fruktofuranosa" },
+	{ file: "d-fruktopyranosa.jpg", name: "D-fruktopyranosa" },
 	{ file: "d-fruktosa.jpg", name: "D-fruktosa" },
 	{ file: "d-galaktosa.jpg", name: "D-galaktosa" },
+	{ file: "d-glukofuranosa.jpg", name: "D-glukofuranosa" },
+	{ file: "d-glukopyranosa.jpg", name: "D-glukopyranosa" },
 	{ file: "d-glukosa.jpg", name: "D-glukosa" },
 	{ file: "d-mannosa.jpg", name: "D-mannosa" },
+	{ file: "d-ribofuranosa.jpg", name: "D-ribofuranosa" },
 	{ file: "d-ribosa.jpg", name: "D-ribosa" },
 	{ file: "d-xylosa.jpg", name: "D-xylosa" },
 	{ file: "ethylen.jpg", name: "Ethylen" },
@@ -149,8 +144,10 @@
 	{ file: "kyselina_valerova.jpg", name: "Kyselina valerová" },
 	{ file: "kyselina_vinna.jpg", name: "Kyselina vinná" },
 	{ file: "leucin.jpg", name: "Leucin" },
+	{ file: "l-fruktofuranosa.jpg", name: "L-fruktofuranosa" },
 	{ file: "l-fruktosa.jpg", name: "L-fruktosa" },
 	{ file: "l-galaktosa.jpg", name: "L-galaktosa" },
+	{ file: "l-glukopyranosa.jpg", name: "L-glukopyranosa" },
 	{ file: "l-glukosa.jpg", name: "L-glukosa" },
 	{ file: "l-mannosa.jpg", name: "L-mannosa" },
 	{ file: "l-ribosa.jpg", name: "L-ribosa" },
@@ -189,14 +186,14 @@
 	{ file: "tyrosin.jpg", name: "Tyrosin" },
 	{ file: "uracil.jpg", name: "Uracil" },
 	{ file: "valin.jpg", name: "Valin" },
-        { file: "vinylchlorid.jpg", name: "Vinylchlorid" }
+    { file: "vinylchlorid.jpg", name: "Vinylchlorid" }
     ];
 
     let current;
     let attempts = 0;
     let pool = []; // Aktuální balíček pro dané kolo
 
-function next() {
+	function next() {
         const msgField = document.getElementById("msg");
         const infoField = document.getElementById("info");
         
@@ -267,7 +264,4 @@ function next() {
     next();
 </script>
 </body>
-
 </html>
-
-
